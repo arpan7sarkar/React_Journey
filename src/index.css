@@ -16,6 +16,10 @@ body {
   background-color: royalblue;
   border-radius: 40px;
   width: 20vmax;
+  height: 20vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card h1 {
   font-size: 40px;
