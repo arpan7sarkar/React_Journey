@@ -1,15 +1,9 @@
 import React from 'react'
-
+import Card from './components/card'
 const App = () => {
   return (
     <>
-    <div id='dad'>
-      <h1>Hello from 1</h1>
-    </div>
-    <div id="mom">
-      <h1>Hello from 2</h1>
-    </div>
-    
+    <Card/>
     </>
   )
 }

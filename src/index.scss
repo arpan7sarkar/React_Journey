@@ -3,7 +3,6 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
 html,
 body {
   color: white;
@@ -11,12 +10,11 @@ body {
   height: 100%;
   background-color: #222;
 }
-
-.card {
+.card{
   background-color: royalblue;
   border-radius: 40px;
   width: 20vmax;
+  h1{
+    font-size: 40px;
+  }
 }
-.card h1 {
-  font-size: 40px;
-}/*# sourceMappingURL=index.css.map */
