@@ -1,4 +1,4 @@
-import Section1 from "./components/Page1/Section1";
+import Section1 from "./components/section 1/Section1";
 function App() {
 
   return (
