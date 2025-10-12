@@ -14,7 +14,10 @@ body {
 #root{
   display: flex;
   gap: 40px ;
-  margin: 50px;
+  margin: 30px;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
 }
 $primary-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $card-bg: #f7f8fa;
@@ -34,6 +37,7 @@ $border-color: #e0e0e0;
   width: 320px;
   font-family: $primary-font;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);

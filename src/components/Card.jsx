@@ -7,6 +7,8 @@ const Card = (props) => {
   const special = props.special; // special fetures eg senior level / flexible schedule
   const pay = props.pay;
   const location = props.location;
+
+
   return (
     <div className="papa">
       <div className="parent">

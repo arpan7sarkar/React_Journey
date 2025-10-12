@@ -16,7 +16,10 @@ body {
 #root {
   display: flex;
   gap: 40px;
-  margin: 50px;
+  margin: 30px;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .parent {
@@ -26,6 +29,7 @@ body {
   width: 320px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
