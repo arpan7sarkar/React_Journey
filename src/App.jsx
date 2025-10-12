@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./components/card";
+import Button from "./components/button/Button";
 const App = () => {
   const jobOpenings = [
   {
@@ -125,7 +126,8 @@ const App = () => {
 ];
   return (
     <>
-      {jobOpenings.map((elem,idx) => {
+      <Button/>
+      {/* {jobOpenings.map((elem,idx) => {
         return (
           <div key={idx}>
             <Card
@@ -138,7 +140,7 @@ const App = () => {
             />
           </div>
         );
-      })}
+      })} */}
     </>
   );
 };
