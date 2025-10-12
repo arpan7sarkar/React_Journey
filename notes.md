@@ -5,3 +5,7 @@ in react we write className not classes and while defining component we name the
 In react we follow component based architecutre
 for using scss only change the name of css file to scss
 for using js in react we have to write the var name inside {}
+
+props:
+
+1:38
