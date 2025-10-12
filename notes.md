@@ -14,3 +14,5 @@ for passing numbers inside props we need to write the num inside {}
 ### props recives a object inside it and similer to backend for getting the values from pops we have to use props.value method calling
 //
 ex: const name= props.name
+
+we can get any type of icon we want from lucid-react

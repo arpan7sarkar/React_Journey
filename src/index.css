@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -12,15 +13,127 @@ body {
   background-color: #222;
 }
 
-.card {
-  background-color: royalblue;
-  border-radius: 40px;
-  width: 20vmax;
-  height: 20vmax;
+#root {
+  display: flex;
+  gap: 40px;
+  margin: 50px;
+}
+
+.parent {
+  background-color: #f7f8fa;
+  border-radius: 20px;
+  padding: 24px;
+  width: 320px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;
+}
+.parent .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent .top .logo {
+  width: 48px;
+  height: 48px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
 }
-.card h1 {
-  font-size: 40px;
+.parent .top .logo::before {
+  content: "a";
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+.parent .top .save {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #7d7d7d;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.parent .top .save::after {
+  content: "🔖";
+  font-size: 14px;
+}
+.parent .top .save::before {
+  content: "Save";
+}
+.parent .main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.parent .main h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+}
+.parent .main h4::after {
+  content: "5 days ago";
+  color: #b0b0b0;
+  font-weight: normal;
+  margin-left: 8px;
+}
+.parent .main h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+.parent .main .details {
+  display: flex;
+  gap: 10px;
+}
+.parent .main .details > div {
+  background-color: #eceef1;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #7d7d7d;
+  font-weight: 500;
+}
+.parent .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 16px;
+}
+.parent .footer .pay-location .pay {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.parent .footer .pay-location .location {
+  color: #7d7d7d;
+  font-size: 14px;
+}
+.parent .footer .pay-location .location::before {
+  content: "Mumbai, India";
+}
+.parent .footer .apply-btn {
+  background-color: #2d3136;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+.parent .footer .apply-btn::before {
+  content: "Apply now";
 }/*# sourceMappingURL=index.css.map */
