@@ -16,3 +16,6 @@ for passing numbers inside props we need to write the num inside {}
 ex: const name= props.name
 
 we can get any type of icon we want from lucid-react
+for using plain css in a better way for react we use module css:
+so what is module css? 
+for using modulo css we have to create a folder then their we have to give our component and the css that we want to use into the component in single folder then have to link using import style form ./blahblah.css 
