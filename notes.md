@@ -7,5 +7,10 @@ for using scss only change the name of css file to scss
 for using js in react we have to write the var name inside {}
 
 props:
+we can get data from upper hirerchial parents
+app->nav here we can use properties of app in nav but not navs attribute into app
+for passing numbers inside props we need to write the num inside {}
 
-1:38
+### props recives a object inside it and similer to backend for getting the values from pops we have to use props.value method calling
+//
+ex: const name= props.name
