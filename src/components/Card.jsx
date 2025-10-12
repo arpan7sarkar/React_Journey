@@ -7,13 +7,13 @@ const Card = (props) => {
   const special = props.special; // special fetures eg senior level / flexible schedule
   const pay = props.pay;
   const location = props.location;
-
+  const logo=props.logo;
 
   return (
     <div className="papa">
       <div className="parent">
         <div className="top">
-          <div className="logo"></div>
+          <div className="logo">{logo}</div>
           <div className="save"></div>
         </div>
         <div className="main">
