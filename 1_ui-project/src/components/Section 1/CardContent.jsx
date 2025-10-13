@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 const CardContent = (props) => {
-  const count = props.count || 1;
+  const count = props.id +1;
   return (
     <div>
       <div className="absolute top-0 left-0 h-full w-full text-white p-10 flex flex-col justify-between">
@@ -9,11 +9,11 @@ const CardContent = (props) => {
         </h2>
         <div>
           <p className="text-3xl font-base font-sans leading-normal mb-8">
-            Prime customers, that have acces to bank credit and are satisfied with the current product
+            {props.info}
           </p>
           <div className="flex justify-between mt-1">
             <button className="bg-blue-500 text-white font-medium px-12 py-2 rounded-full text-base">
-              Satsified
+              {props.tag}
             </button>
             <button className="bg-blue-500 text-white font-medium px-4 py-2 rounded-full text-base">
               <ArrowRight />
