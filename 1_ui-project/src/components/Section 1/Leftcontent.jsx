@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 const LeftContent = () => {
   return (
     
-    <div className="bg-gray-400 h-full w-2/7">
+    <div className=" h-full w-2/7">
       <div className="flex text-6xl flex-col pt-30 font-bold">
         <div>Prospective</div>
         <div>customer</div>

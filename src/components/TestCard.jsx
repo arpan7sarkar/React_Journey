@@ -1,5 +1,5 @@
 import React from "react";
-const Card = (props) => {
+const TestCard = (props) => {
   //here the params that i am passing is called props
   const companyName = props.companyName;
   const jd = props.jd;
@@ -36,4 +36,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default TestCard;
