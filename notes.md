@@ -37,6 +37,9 @@ useState
  this is most common that we use to manage states lets assume one button color is blue after hoversing the color will turn into red here the change os state is happening here we need to use 
 usestates
 
+set method works in async method
+if we change and put same value on react then react doesnot rerender cause its same thing so no need to rerender
+
 use effect
   this things manages side events without interapting main one
 
