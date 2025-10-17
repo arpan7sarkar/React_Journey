@@ -19,3 +19,14 @@ we can get any type of icon we want from lucid-react
 for using plain css in a better way for react we use module css:
 so what is module css? 
 for using modulo css we have to create a folder then their we have to give our component and the css that we want to use into the component in single folder then have to link using import style form ./blahblah.css 
+
+---
+Function calling
+
+can call inside tag or outside tag if we want to pass params inside the outer function then we have to use this syntax 
+
+onChange={function (e) {
+          typeChange(e);
+        }}
+        
+--

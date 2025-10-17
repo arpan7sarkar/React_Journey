@@ -7,30 +7,19 @@ const App = () => {
   const typeChange = (e) => {
     console.log(e.target.value);
   };
+
   return (
     <div>
-      <button onClick={btnClick}>Click</button>
-      <button onClick={() => console.log("Button Clicked hua")}>Click</button>
-      <input
-        onChange={function (e) {
-          console.log(e.target.value);
-        }}
-        className="mt-10 px-15 py-7 border-2"
-        type="text"
-        name=""
-        placeholder="Enter your name"
-        id=""
-      />
-      <input
-        onChange={function (e) {
-          typeChange(e);
-        }}
-        className="mt-10 px-15 py-7 border-2"
-        type="text"
-        name=""
-        placeholder="Track your typing"
-        id=""
-      />
+      <div className="p-30 h-5 w-5 bg-black" onMouseMove={function(e){
+        console.log(e.clientY)
+      }
+      // onwheel(function(e){
+      //   console.log(e.deltaY)
+      // })
+
+      }>
+
+      </div>
     </div>
   );
 };
