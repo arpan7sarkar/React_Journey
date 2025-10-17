@@ -30,3 +30,23 @@ onChange={function (e) {
         }}
         
 --
+
+
+Hooks in react 
+useState
+ this is most common that we use to manage states lets assume one button color is blue after hoversing the color will turn into red here the change os state is happening here we need to use 
+usestates
+
+use effect
+  this things manages side events without interapting main one
+
+useRef 
+    while using react js user have to interact with react for performing any task chosing any elem we don't directly select the website elem we use react for that
+
+useContext
+    manages global context
+    advance version of useState
+useReducer 
+    advance version of usContext
+
+we use useCallback and useMemo for changing a particuler thing at a time
