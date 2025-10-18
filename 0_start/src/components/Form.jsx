@@ -5,6 +5,7 @@ const Form = () => {
   const formHandler = (e) => {
     e.preventDefault(); //this will prevent the default behaviour of form which is to reload the page
     console.log("Form had been submitted");
+    setName('');
   };
   return (
     //here by default we are directly trying to implement form that is not a good sign
