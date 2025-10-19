@@ -19,7 +19,7 @@ const Notes = () => {
           name=""
           id=""
           value={head}
-          className="textarea textarea-primary textarea-xl  m-4 px-6 py-2 rounded outline-none"
+          className="textarea textarea-primary textarea-xl h-32   m-4 px-6 py-2 rounded outline-none"
           onChange={(e)=>{
             setHead(e.target.value);
           }}
@@ -28,7 +28,7 @@ const Notes = () => {
           placeholder="Enter the context"
           name=""
           id=""
-          cols="30"
+          cols="36"
           rows="10"
           value={context}
           className="textarea textarea-primary m-4 px-6 py-2 rounded "
@@ -37,7 +37,7 @@ const Notes = () => {
           }}
           
         ></textarea>
-        <button className="btn w-1/5 mx-4 px-6  rounded ">Default</button>
+        <button className="btn mx-4 px-6 rounded ">Add note</button>
       </form>
 
     </div>
