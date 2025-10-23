@@ -13,7 +13,7 @@ const UseEffect = () => {
 
     useEffect(() => {
         console.log("Use effect is runing")
-    }, []);//here we have proived array as dependecy so the things that are gonna get written inside the array only for thsoe use effect will run 
+    }, [num1]);//here we have proived array as dependecy so the things that are gonna get written inside the array only for thsoe use effect will run 
   return (
     <div>
       <p>Here i will learn about use effect and how it works why it used</p>
