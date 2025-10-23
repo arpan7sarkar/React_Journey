@@ -74,4 +74,7 @@ liye.
 
 useMemo & useCallback - optimization ke liye,
 unnecessary re-renders avoid karne ke liye.
---+
+--
+
+we use browserlist for making our project supported for older version of browsers
+we have to use it inside package.json
