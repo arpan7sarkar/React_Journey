@@ -1,9 +1,8 @@
-import React from "react";
-
+import axios from "axios"
 const ApiCalling = () => {
   const getData = async() => {
-    const responce= await fetch('https://jsonplaceholder.typicode.com/todos/1');
-    const data= await responce.json();
+
+    const {data}= await axios.get('https://jsonplaceholder.typicode.com/todos/1');
     console.log(data);
   };
   return (
