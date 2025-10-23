@@ -1,9 +1,12 @@
 import axios from "axios"
+import { useState } from "react";
 const ApiCalling = () => {
+    
+    const [data, setData] = useState([]);
   const getData = async() => {
-
-    const {data}= await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-    console.log(data);
+    const responce= await axios.get('https://picsum.photos/v2/list');
+    setData(responce.data);
+    
   };
   return (
     <div className="bg-black w-screen h-screen text-white flex flex-col gap-3">
@@ -19,6 +22,11 @@ const ApiCalling = () => {
       >
         Get data
       </button>
+      <div >
+        {data.map((elem,idx) => {
+            return <div>{idx+1} {elem.author}</div>
+        })}
+      </div>
     </div>
   );
 };
