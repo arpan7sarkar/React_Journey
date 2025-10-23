@@ -3,7 +3,8 @@ import React from "react";
 const ApiCalling = () => {
   const getData = async() => {
     const responce= await fetch('https://jsonplaceholder.typicode.com/todos/1');
-    console.log(responce);
+    const data= await responce.json();
+    console.log(data);
   };
   return (
     <div className="bg-black w-screen h-screen text-white flex flex-col gap-3">
