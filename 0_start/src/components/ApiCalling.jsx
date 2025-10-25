@@ -3,7 +3,7 @@ import { useState } from "react";
 const ApiCalling = () => {
     
     const [data, setData] = useState([]);
-  const getData = async() => {
+  const getData = async () => {
     const responce= await axios.get('https://picsum.photos/v2/list');
     setData(responce.data);
     
