@@ -78,3 +78,8 @@ unnecessary re-renders avoid karne ke liye.
 
 we use browserlist for making our project supported for older version of browsers
 we have to use it inside package.json
+
+Babel is always running in bg babels work is to convert all the jsx code to html and js one thing babel is not created by facebook
+jsx is not html+js its a totally whole diferent syntax
+JSX is behind the scene react.createelemnt then js object then html(while rendering)
+
