@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Photo from "./components/Photo";
 
 const App = () => {
   const [photoData, setPhotoData] = useState([]);
@@ -30,16 +31,7 @@ const App = () => {
       photoDiv = photoData.map((e) => {
         return (
           <div>
-            <a href={e.url} target="_blank">
-              <div className="rounded-xl overflow-hidden">
-                <img
-                  src={e.download_url}
-                  alt=""
-                  className="object-cover w-77 h-70 overflow-auto"
-                />
-                <div className="font-bold text-2xl">{e.author}</div>
-              </div>
-            </a>
+           <Photo e={e}/>
           </div>
         );
       });
