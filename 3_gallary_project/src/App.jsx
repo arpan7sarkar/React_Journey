@@ -12,8 +12,12 @@ const App = () => {
   const len = Object.keys(photoData).length;
   if (len > 0) {
     {
-     photoDiv= photoData.map((idx, e) => {
-        return <div key={idx}>photo {e.download_url}</div>;
+      photoDiv = photoData.map(( e) => {
+        return (
+          <div >
+            <img src={e.download_url} alt="" className="object-cover w-70 h-70 overflow-auto" />
+          </div>
+        );
       });
     }
   }
@@ -25,7 +29,7 @@ const App = () => {
       >
         Click me
       </button>
-      <div>{photoDiv}</div>
+      <div className="flex flex-wrap gap-5">{photoDiv}</div>
     </div>
   );
 };
