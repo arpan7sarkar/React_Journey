@@ -3,28 +3,43 @@ import React, { useEffect, useState } from "react";
 
 const App = () => {
   const [photoData, setPhotoData] = useState([]);
+  const [page, setPage] = useState(1);
+  const prev=()=>{
+    if(page===1){
+      return alert("You are on first page");
+    }
+    setPage(page-1);
+    setPhotoData([]);
+
+  }
+  const next=()=>{
+    setPage(page+1);
+    setPhotoData([]);
+  }
   const getData = async () => {
     const responce = await axios.get(
-      "https://picsum.photos/v2/list?page=3&limit=40"
+      `https://picsum.photos/v2/list?page=${page}&limit=40`
     );
     setPhotoData(responce.data);
     console.log(photoData);
   };
-  let photoDiv = "No photos avilable";
+  let photoDiv = <div className="absolute top-1/2 left-1/2 -translate-1/2 text-2xl">Loading...</div> ;
   const len = Object.keys(photoData).length;
   if (len > 0) {
     {
       photoDiv = photoData.map((e) => {
         return (
           <div>
-            <div className="rounded-xl overflow-hidden">
-              <img
-                src={e.download_url}
-                alt=""
-                className="object-cover w-77 h-70 overflow-auto"
-              />
-              <div>{e.author}</div>
-            </div>
+            <a href={e.url} target="_blank">
+              <div className="rounded-xl overflow-hidden">
+                <img
+                  src={e.download_url}
+                  alt=""
+                  className="object-cover w-77 h-70 overflow-auto"
+                />
+                <div className="font-bold text-2xl">{e.author}</div>
+              </div>
+            </a>
           </div>
         );
       });
@@ -32,10 +47,20 @@ const App = () => {
   }
   useEffect(() => {
     getData();
-  })
+  });
   return (
     <div className="bg-black h-screen text-cyan-200 overflow-auto">
       <div className="flex flex-wrap gap-5">{photoDiv}</div>
+      <div className="flex items-center justify-center gap-5 ">
+        <button className="bg-blue-400 px-6 py-2 mt-3 active:scale-95 cursor-pointer text-m rounded-lg text-black"
+        onClick={prev}>
+          Prev
+        </button>
+        <button className="bg-blue-400 px-6 py-2 mt-3 active:scale-95 cursor-pointer text-m rounded-lg text-black"
+        onClick={next}>
+          Next
+        </button>
+      </div>
     </div>
   );
 };
