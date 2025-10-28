@@ -14,7 +14,7 @@ const App = () => {
     {
       photoDiv = photoData.map(( e) => {
         return (
-          <div >
+          <div className="rounded-xl">
             <img src={e.download_url} alt="" className="object-cover w-77 h-70 overflow-auto" />
           </div>
         );
