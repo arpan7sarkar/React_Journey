@@ -43,11 +43,16 @@ const App = () => {
   return (
     <div className="bg-black h-screen text-cyan-200 overflow-auto">
       <div className="flex flex-wrap gap-5">{photoDiv}</div>
-      <div className="flex items-center justify-center gap-5 ">
-        <button className="bg-blue-400 px-6 py-2 mt-3 active:scale-95 cursor-pointer text-m rounded-lg text-black"
+      <div className="flex items-center justify-center gap-4 ">
+        <button
+        style={{opacity: page===1?0.5:1}}
+         className="bg-blue-400 px-6 py-2 mt-3 active:scale-95 cursor-pointer text-m rounded-lg text-black"
         onClick={prev}>
           Prev
         </button>
+        <div>
+          <p className="px-6 text-lg font-semibold rounded-2xl mt-3 py-2">Page: {page}</p>
+        </div>
         <button className="bg-blue-400 px-6 py-2 mt-3 active:scale-95 cursor-pointer text-m rounded-lg text-black"
         onClick={next}>
           Next
