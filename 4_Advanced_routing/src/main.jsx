@@ -16,9 +16,11 @@ createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about" element={<About />} />
-      <Route path="/product" element=<Product/> />
-      <Route path="/product/men" element=<Men/> />
-      <Route path="/product/woman" element=<Woman/> />
+      <Route path="/product" element=<Product/> >
+       <Route path="men" element=<Men/> />
+      <Route path="woman" element=<Woman/> />
+      </Route> 
+     
       {/* path="*" is for page not found */}
       <Route path="*" element=<Notfound /> />
     </Routes>
