@@ -91,3 +91,9 @@ just have to put usestates into the props then all set
 When we use context api then data had been autmatically set into a centralized data (data centrlization)
 
 best practics is to centralize the data in a particuler position 
+
+we can pass children of any div via props we just have to use not self closing tag normal tags after those tags will automatically share the children in the form of array we can easily access them by calling props.children[index]
+
+### Context API
+ create context provide the context (provider) and then use context
+

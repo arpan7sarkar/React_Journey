@@ -4,11 +4,12 @@ import Pobj from "./components/Pobj";
 import Form from "./components/Form";
 import ApiCalling from "./components/ApiCalling";
 import UseEffect from "./components/UseEffect";
+import ContextApi from "./components/ContextApi";
 const App = () => {
 
   return (
     <div>
-     <UseEffect/>
+      <ContextApi/>
     </div>
   );
 };
