@@ -84,3 +84,10 @@ jsx is not html+js its a totally whole diferent syntax
 JSX is behind the scene react.createelemnt then js object then html(while rendering)
 
 use navigate not only shifts the page it shifts the changes of website 100% same to how broswers upper arrows works
+
+normally data goes from top to bottom maintaing a hirerchy but we can also access its reverse version for that we have to use :
+just have to put usestates into the props then all set
+
+When we use context api then data had been autmatically set into a centralized data (data centrlization)
+
+best practics is to centralize the data in a particuler position 
