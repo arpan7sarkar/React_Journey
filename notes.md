@@ -83,3 +83,4 @@ Babel is always running in bg babels work is to convert all the jsx code to html
 jsx is not html+js its a totally whole diferent syntax
 JSX is behind the scene react.createelemnt then js object then html(while rendering)
 
+use navigate not only shifts the page it shifts the changes of website 100% same to how broswers upper arrows works

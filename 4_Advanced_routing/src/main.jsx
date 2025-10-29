@@ -11,10 +11,12 @@ import Woman from "./pages/Woman.jsx";
 import Courses from "./pages/Courses.jsx";
 import Notfound from "./Pages/Notfound.jsx";
 import CourseDetail from "./pages/CourseDetail.jsx";
+import Nav2 from "./components/Nav2.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Navbar />
+    <Nav2/>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about" element={<About />} />

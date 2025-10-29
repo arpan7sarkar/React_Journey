@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 const Notfound = () => {
   let navigate = useNavigate();//use navigate is also comes from react router dom and it is used for navigation/works similer to LINK tag
+  //but useNavigate does far better eg page switch back next page
   const btnClicked = () => {
     navigate('/')
   }
