@@ -6,7 +6,7 @@ const ContextApi = () => {
     console.log(data)
   return (
     <div>
-      wtf
+        <h1>{data}</h1>
     </div>
   )
 }
