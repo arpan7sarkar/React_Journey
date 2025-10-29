@@ -20,7 +20,8 @@ const UseEffect = () => {
       <p>Use effect helps us to run multiple task parralally</p>
         <div>num1 {num1}</div>
         <div>num2 {num2}</div>
-      <button  className="mx-4  p-4 bg-blue-700 rounded-lg w-1/10" onMouseEnter={num1Change} onMouseLeave={num2Change}>click me</button>
+      <button  className="mx-4  p-4 bg-blue-700 rounded-lg w-1/10" onMouseEnter={num1Change} onMouseLeave={num2Change}>hover
+ me</button>
     </div>
   )
 }
